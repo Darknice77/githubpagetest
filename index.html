@@ -1,1 +1,578 @@
-<h1>Github page test</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vinku — Tu mascota come bien, aunque no estés</title>
+  <meta name="description" content="Vinku es el dispensador inteligente que programa, controla y confirma cada comida de tu mascota desde tu celular. Próximamente en Chile." />
+  <meta name="theme-color" content="#1A1A2E" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Vinku — Tu mascota come bien, aunque no estés" />
+  <meta property="og:description" content="El dispensador inteligente que programa, controla y confirma cada comida desde tu celular. Próximamente en Chile." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_CL" />
+
+  <!-- Favicon (V monograma) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231A1A2E'/%3E%3Cpath d='M8 9l5 14h2l5-14h-3l-3 9-3-9z' fill='%23F5F0E8'/%3E%3Ccircle cx='22' cy='20' r='2.4' fill='%23C4704B'/%3E%3C/svg%3E" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/phosphor-icons"></script>
+
+  <!-- Hero image priority -->
+  <link rel="preload" as="image" href="assets/img/vinku-producto-hero.png" fetchpriority="high" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css?v=20260613" />
+</head>
+
+<body>
+  <a class="skip-link" href="#hero">Saltar al contenido</a>
+
+  <!-- Custom cursor (desktop, fine pointer) -->
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor-ring"></div>
+    <div class="cursor-dot"></div>
+  </div>
+
+  <!-- ====================== HEADER ====================== -->
+  <header class="site" id="top" data-header>
+    <div class="container header-inner">
+      <a href="#top" class="logo" data-hover>vinku<span class="logo-dot">.</span></a>
+
+      <nav class="primary" id="nav" aria-label="Navegación principal">
+        <a href="#como-funciona" data-hover>Cómo funciona</a>
+        <a href="#modelos" data-hover>Modelos</a>
+        <a href="#app" data-hover>App</a>
+        <a href="#preguntas" data-hover>Preguntas</a>
+      </nav>
+
+      <div class="header-cta">
+        <a href="#registro" class="btn btn-primary btn-inline" data-hover>Reservar mi Vinku</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+          <i class="ph-list" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ====================== HERO ====================== -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="badge-pill reveal"><i class="ph-map-pin" aria-hidden="true"></i> Próximamente en Chile</span>
+          <h1 class="hero-title reveal">Tu mascota come bien, <span class="accent">aunque no estés</span></h1>
+          <p class="hero-sub reveal">Vinku es el dispensador inteligente que programa, controla y confirma cada comida desde tu celular.</p>
+          <div class="hero-actions reveal">
+            <a href="#registro" class="btn btn-primary btn-lg" data-hover>Quiero ser de los primeros</a>
+            <span class="hero-hint">Regístrate gratis. Te avisamos antes que a nadie.</span>
+          </div>
+        </div>
+
+        <div class="hero-media reveal">
+          <div class="media-frame" data-parallax>
+            <img class="hero-photo" src="assets/img/vinku-producto-hero.png"
+                 alt="Dispensador Vinku en un living, con un perro golden y un gato cerca, y la app abierta en un celular"
+                 fetchpriority="high" decoding="async" width="1200" height="600" />
+            <div class="media-halo" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== MARQUEE ====================== -->
+    <div class="marquee" aria-hidden="true" data-marquee>
+      <div class="marquee-track">
+        <span>Programar</span><span class="sep">·</span>
+        <span>Controlar</span><span class="sep">·</span>
+        <span>Confirmar</span><span class="sep">·</span>
+        <span>Tranquilidad</span><span class="sep">·</span>
+        <span>Rutina</span><span class="sep">·</span>
+        <span>Porciones</span><span class="sep">·</span>
+        <span>Horarios</span><span class="sep">·</span>
+        <span>Remoto</span><span class="sep">·</span>
+        <span>Conectar</span><span class="sep">·</span>
+      </div>
+    </div>
+
+    <!-- ====================== PROBLEM → SOLUTION ====================== -->
+    <section id="problema" class="section problem">
+      <div class="container">
+        <div class="problem-top">
+          <div class="problem-media reveal" data-parallax>
+            <img src="assets/img/vinku-mascota-espera.png"
+                 alt="Perro golden sentado junto a la ventana mirando hacia afuera, con su plato vacío en el suelo"
+                 loading="lazy" decoding="async" width="1200" height="800" />
+          </div>
+          <header class="section-head reveal">
+            <p class="eyebrow">El día a día</p>
+            <h2>Sabes lo que se siente</h2>
+            <p class="sub">Esa duda que aparece cuando sales de casa y no sabes si tu mascota va a comer a tiempo.</p>
+          </header>
+        </div>
+
+        <div class="pain-list">
+          <article class="pain reveal" data-tilt>
+            <div class="pain-icon"><i class="ph-clock" aria-hidden="true"></i></div>
+            <div class="pain-body">
+              <div class="before">
+                <span class="lbl">Antes</span>
+                <p>Sales temprano al trabajo y no tienes certeza de que tu mascota va a comer a la hora que necesita.</p>
+              </div>
+              <div class="after">
+                <span class="lbl"><i class="ph-check" aria-hidden="true"></i> Con Vinku</span>
+                <p>Programas los horarios desde tu celular antes de salir. Vinku dispensa la porción exacta, a la hora exacta.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="pain reveal" data-tilt>
+            <div class="pain-icon"><i class="ph-bell-ringing" aria-hidden="true"></i></div>
+            <div class="pain-body">
+              <div class="before">
+                <span class="lbl">Antes</span>
+                <p>Llegas tarde y lo primero que piensas es si tu perro o tu gata ya comió. No tienes cómo saberlo.</p>
+              </div>
+              <div class="after">
+                <span class="lbl"><i class="ph-check" aria-hidden="true"></i> Con Vinku</span>
+                <p>Recibes una notificación cada vez que Vinku dispensa. Abres el celular y sabes que comió.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="pain reveal" data-tilt>
+            <div class="pain-icon"><i class="ph-map-pin" aria-hidden="true"></i></div>
+            <div class="pain-body">
+              <div class="before">
+                <span class="lbl">Antes</span>
+                <p>Viajas un fin de semana y dependes de alguien que se acuerde de alimentar a tu mascota. No siempre funciona.</p>
+              </div>
+              <div class="after">
+                <span class="lbl"><i class="ph-check" aria-hidden="true"></i> Con Vinku</span>
+                <p>Los horarios siguen funcionando aunque no estés. Dispensas manualmente si necesitas. Desde cualquier lugar.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== HOW IT WORKS ====================== -->
+    <section id="como-funciona" class="section steps-section">
+      <div class="container">
+        <header class="section-head center reveal">
+          <p class="eyebrow">Sin complicaciones</p>
+          <h2>Listo en tres pasos</h2>
+        </header>
+
+        <div class="steps">
+          <span class="step-line" aria-hidden="true"></span>
+
+          <div class="step reveal">
+            <div class="step-num mono">01</div>
+            <i class="ph-wifi-high" aria-hidden="true"></i>
+            <h3>Conecta</h3>
+            <p>Enchufas Vinku, lo conectas a tu Wi-Fi y lo vinculas con la app. Toma menos de 5 minutos.</p>
+          </div>
+
+          <div class="step reveal">
+            <div class="step-num mono">02</div>
+            <i class="ph-sliders-horizontal" aria-hidden="true"></i>
+            <h3>Programa</h3>
+            <p>Configuras hasta 6 horarios diarios y defines la porción en gramos para cada uno. Ajustas todo desde el celular.</p>
+          </div>
+
+          <div class="step reveal">
+            <div class="step-num mono">03</div>
+            <i class="ph-check-circle" aria-hidden="true"></i>
+            <h3>Respira tranquilo</h3>
+            <p>Vinku dispensa automáticamente. Tú recibes una notificación. Tu mascota come a tiempo, todos los días.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== BENEFITS ====================== -->
+    <section id="beneficios" class="section benefits-section">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Lo que de verdad importa</p>
+          <h2>Lo que cambia cuando tienes un Vinku</h2>
+        </header>
+
+        <div class="benefits-grid">
+          <article class="benefit reveal" data-tilt>
+            <i class="ph-heart" aria-hidden="true"></i>
+            <h3>Tranquilidad real</h3>
+            <p>No es un deseo. Es saber que tu mascota comió, con la porción correcta, a la hora correcta. Cada día.</p>
+          </article>
+          <article class="benefit reveal" data-tilt>
+            <i class="ph-clock-countdown" aria-hidden="true"></i>
+            <h3>Tu tiempo de vuelta</h3>
+            <p>No más correr a la casa para alimentar. No más coordinar con vecinos. Vinku se encarga y tú recuperas tu día.</p>
+          </article>
+          <article class="benefit reveal" data-tilt>
+            <i class="ph-chart-line-up" aria-hidden="true"></i>
+            <h3>Rutinas que cuidan</h3>
+            <p>Las porciones exactas y los horarios consistentes protegen la salud de tu mascota a largo plazo. No es un lujo, es cuidado.</p>
+          </article>
+          <article class="benefit reveal" data-tilt>
+            <i class="ph-globe-simple" aria-hidden="true"></i>
+            <h3>Control desde donde estás</h3>
+            <p>En la oficina, en el supermercado o de viaje. Abres la app y tienes todo bajo control. Sin depender de nadie.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== MODELS ====================== -->
+    <section id="modelos" class="section models-section">
+      <div class="container">
+        <header class="section-head center reveal">
+          <p class="eyebrow">Elige tu Vinku</p>
+          <h2>Tres modelos, un mismo propósito</h2>
+          <p class="sub">Que tu mascota coma bien, siempre.</p>
+        </header>
+
+        <div class="models-grid">
+          <!-- CORE -->
+          <article class="model reveal" data-tilt>
+            <h3>Vinku Core</h3>
+            <p class="tagline">Todo el control, cero preocupación.</p>
+            <div class="price mono">$29.990</div>
+            <ul class="model-features">
+              <li><i class="ph-check" aria-hidden="true"></i> 6 horarios programables</li>
+              <li><i class="ph-check" aria-hidden="true"></i> Porción configurable en gramos</li>
+              <li><i class="ph-check" aria-hidden="true"></i> Dispensación manual remota</li>
+              <li><i class="ph-check" aria-hidden="true"></i> Notificaciones push</li>
+              <li><i class="ph-check" aria-hidden="true"></i> Alerta de tolva baja</li>
+              <li><i class="ph-check" aria-hidden="true"></i> Historial de alimentación</li>
+              <li><i class="ph-check" aria-hidden="true"></i> Conexión Wi-Fi</li>
+              <li><i class="ph-check" aria-hidden="true"></i> App para iOS y Android</li>
+            </ul>
+            <a href="#registro" class="btn btn-ghost btn-block" data-hover data-model="Vinku Core — $29.990">Me interesa Core</a>
+          </article>
+
+          <!-- SENSE -->
+          <article class="model featured reveal" data-tilt>
+            <span class="model-flag">Más popular</span>
+            <h3>Vinku Sense</h3>
+            <p class="tagline">Más cerca, aunque no estés.</p>
+            <div class="price mono">$49.990</div>
+            <ul class="model-features">
+              <li class="included"><i class="ph-plus" aria-hidden="true"></i> Todo lo de Core</li>
+              <li><i class="ph-check" aria-hidden="true"></i> Audio al dispensar</li>
+              <li><i class="ph-check" aria-hidden="true"></i> Tu mascota aprende a reconocer cuándo es hora de comer</li>
+            </ul>
+            <a href="#registro" class="btn btn-primary btn-block" data-hover data-model="Vinku Sense — $49.990">Me interesa Sense</a>
+          </article>
+
+          <!-- VISION -->
+          <article class="model reveal" data-tilt>
+            <h3>Vinku Vision</h3>
+            <p class="tagline">La tranquilidad de verlo con tus ojos.</p>
+            <div class="price mono">$79.990</div>
+            <ul class="model-features">
+              <li class="included"><i class="ph-plus" aria-hidden="true"></i> Todo lo de Sense</li>
+              <li><i class="ph-check" aria-hidden="true"></i> Cámara integrada</li>
+              <li><i class="ph-check" aria-hidden="true"></i> Visualización en tiempo real desde la app</li>
+            </ul>
+            <a href="#registro" class="btn btn-ghost btn-block" data-hover data-model="Vinku Vision — $79.990">Me interesa Vision</a>
+          </article>
+        </div>
+
+        <div class="models-note reveal">
+          <p>¿No estás seguro? No importa. Puedes cambiar tu elección cuando quieras. Registrarte no te compromete a nada.</p>
+          <p class="fine mono">Precios de lanzamiento exclusivos para lista de espera. El precio final puede variar.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== APP ====================== -->
+    <section id="app" class="section app-section">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Todo desde tu celular</p>
+          <h2>Configuras una vez, funciona todos los días</h2>
+          <p class="sub">La app de Vinku pone el control en tu mano.</p>
+        </header>
+
+        <div class="app-grid">
+          <div class="feature-list">
+            <div class="feature reveal">
+              <i class="ph-calendar-check" aria-hidden="true"></i>
+              <div>
+                <h4>Programa hasta 6 horarios</h4>
+                <p>Define cuándo come tu mascota. Mañana, mediodía, tarde, noche. Tú decides, Vinku cumple.</p>
+              </div>
+            </div>
+            <div class="feature reveal">
+              <i class="ph-scales" aria-hidden="true"></i>
+              <div>
+                <h4>Porciones al gramo</h4>
+                <p>Cada horario tiene su porción. 40 gramos en la mañana, 60 en la noche. Tú configuras, Vinku mide.</p>
+              </div>
+            </div>
+            <div class="feature reveal">
+              <i class="ph-hand-tap" aria-hidden="true"></i>
+              <div>
+                <h4>Dispensación manual</h4>
+                <p>¿Tu mascota tiene hambre fuera de horario? Un toque en la app y Vinku libera alimento al instante.</p>
+              </div>
+            </div>
+            <div class="feature reveal">
+              <i class="ph-bell-ringing" aria-hidden="true"></i>
+              <div>
+                <h4>Notificaciones en tiempo real</h4>
+                <p>Cada vez que Vinku dispensa, recibes una confirmación. Sabes que comió sin tener que preguntar.</p>
+              </div>
+            </div>
+            <div class="feature reveal">
+              <i class="ph-clipboard-text" aria-hidden="true"></i>
+              <div>
+                <h4>Historial completo</h4>
+                <p>Revisa cuándo comió, cuánto comió y si hubo algún horario que se saltó. Todo queda registrado.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="phone-wrap reveal" data-parallax>
+            <div class="phone-mock" role="img" aria-label="Ilustración de la app de Vinku en un teléfono">
+              <div class="phone-notch" aria-hidden="true"></div>
+              <div class="phone-screen">
+                <div class="ps-row">
+                  <span class="ps-dot"></span>
+                  <span class="ps-line short"></span>
+                </div>
+                <div class="ps-card accent">
+                  <span class="ps-label mono">13:00 · 85g</span>
+                  <span class="ps-bar"></span>
+                </div>
+                <div class="ps-card">
+                  <span class="ps-label mono">08:00 · 40g</span>
+                  <span class="ps-bar w70"></span>
+                </div>
+                <div class="ps-card">
+                  <span class="ps-label mono">20:00 · 60g</span>
+                  <span class="ps-bar w50"></span>
+                </div>
+                <div class="ps-row end">
+                  <span class="ps-pill mono">Conectado</span>
+                </div>
+              </div>
+            </div>
+            <div class="media-halo soft" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== TRUST ====================== -->
+    <section id="confianza" class="section trust">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow light">Sin letra chica</p>
+          <h2>Compra tranquilo</h2>
+        </header>
+
+        <div class="trust-grid">
+          <article class="trust-badge reveal">
+            <i class="ph-shield-check" aria-hidden="true"></i>
+            <h4>Garantía de 12 meses</h4>
+            <p>Si Vinku presenta fallas de fabricación, lo reemplazamos sin costo. Sin letra chica.</p>
+          </article>
+          <article class="trust-badge reveal">
+            <i class="ph-cookie" aria-hidden="true"></i>
+            <h4>Material grado alimentario</h4>
+            <p>Las piezas en contacto con el alimento están fabricadas con plástico de alta resistencia, seguro para tu mascota.</p>
+          </article>
+          <article class="trust-badge reveal">
+            <i class="ph-flag-banner" aria-hidden="true"></i>
+            <h4>Diseñado en Chile</h4>
+            <p>Vinku nace en Chile, con soporte en español y atención directa.</p>
+          </article>
+          <article class="trust-badge reveal">
+            <i class="ph-whatsapp-logo" aria-hidden="true"></i>
+            <h4>Soporte por WhatsApp</h4>
+            <p>¿Dudas? ¿Problemas? Escribes y te respondemos. Sin tickets, sin bots, sin esperas.</p>
+          </article>
+          <article class="trust-badge reveal">
+            <i class="ph-package" aria-hidden="true"></i>
+            <h4>Envío a todo Chile</h4>
+            <p>Cuando Vinku esté disponible, despachamos a todo el país. Los registrados en la lista de espera reciben su envío primero.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== FAQ ====================== -->
+    <section id="preguntas" class="section faq-section">
+      <div class="container">
+        <header class="section-head center reveal">
+          <p class="eyebrow">Antes de que preguntes</p>
+          <h2>Preguntas frecuentes</h2>
+        </header>
+
+        <div class="faq" id="faq">
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false" id="faq-q1" aria-controls="faq-a1">¿Vinku funciona para perros y gatos?<i class="ph-caret-down" aria-hidden="true"></i></button>
+            <div class="faq-a" id="faq-a1" role="region" aria-labelledby="faq-q1"><div class="faq-a-inner">Sí, funciona para ambos. La porción es configurable en gramos, así que puedes ajustarla al tamaño y necesidad de tu mascota. Un chihuahua y un labrador pueden usar el mismo Vinku con configuraciones diferentes.</div></div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false" id="faq-q2" aria-controls="faq-a2">¿Qué tipo de alimento puedo usar?<i class="ph-caret-down" aria-hidden="true"></i></button>
+            <div class="faq-a" id="faq-a2" role="region" aria-labelledby="faq-q2"><div class="faq-a-inner">Vinku está diseñado para alimento seco (croquetas o pellets). No es compatible con alimento húmedo, semihúmedo ni snacks irregulares. El tamaño de croqueta recomendado es de 5 a 15 mm de diámetro.</div></div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false" id="faq-q3" aria-controls="faq-a3">¿Necesito una red Wi-Fi especial?<i class="ph-caret-down" aria-hidden="true"></i></button>
+            <div class="faq-a" id="faq-a3" role="region" aria-labelledby="faq-q3"><div class="faq-a-inner">Vinku se conecta a redes Wi-Fi de 2.4 GHz, que es la frecuencia estándar de la mayoría de los routers domésticos en Chile. Si tu router es dual band (2.4 y 5 GHz), solo necesitas conectar Vinku a la red de 2.4. En la app te guiamos paso a paso.</div></div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false" id="faq-q4" aria-controls="faq-a4">¿Qué pasa si se corta el internet?<i class="ph-caret-down" aria-hidden="true"></i></button>
+            <div class="faq-a" id="faq-a4" role="region" aria-labelledby="faq-q4"><div class="faq-a-inner">Los horarios que ya están programados se ejecutan normalmente aunque Vinku pierda conexión a internet. Lo que se pausa es el control remoto y las notificaciones. Cuando vuelve la conexión, todo se sincroniza automáticamente.</div></div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false" id="faq-q5" aria-controls="faq-a5">¿Y si se corta la luz?<i class="ph-caret-down" aria-hidden="true"></i></button>
+            <div class="faq-a" id="faq-a5" role="region" aria-labelledby="faq-q5"><div class="faq-a-inner">Si hay un corte de energía, Vinku se detiene. Cuando vuelve la luz, retoma los horarios programados automáticamente. La configuración no se pierde.</div></div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false" id="faq-q6" aria-controls="faq-a6">¿El material es seguro para mi mascota?<i class="ph-caret-down" aria-hidden="true"></i></button>
+            <div class="faq-a" id="faq-a6" role="region" aria-labelledby="faq-q6"><div class="faq-a-inner">Sí. Las piezas en contacto con el alimento están fabricadas con plástico de alta resistencia y grado alimentario. No libera sustancias tóxicas y es fácil de limpiar.</div></div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false" id="faq-q7" aria-controls="faq-a7">¿Es difícil de configurar?<i class="ph-caret-down" aria-hidden="true"></i></button>
+            <div class="faq-a" id="faq-a7" role="region" aria-labelledby="faq-q7"><div class="faq-a-inner">No. Enchufas Vinku, descargas la app, lo conectas a tu Wi-Fi y empiezas a programar horarios. Todo el proceso toma menos de 5 minutos. No necesitas conocimientos técnicos.</div></div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false" id="faq-q8" aria-controls="faq-a8">¿Cuál es la diferencia entre Core, Sense y Vision?<i class="ph-caret-down" aria-hidden="true"></i></button>
+            <div class="faq-a" id="faq-a8" role="region" aria-labelledby="faq-q8"><div class="faq-a-inner">Los tres modelos programan horarios, controlan porciones y envían notificaciones. Sense agrega audio al dispensar, lo que le enseña a tu mascota a reconocer cuándo es hora de comer. Vision agrega además una cámara para que puedas ver a tu mascota comer en tiempo real desde tu celular.</div></div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false" id="faq-q9" aria-controls="faq-a9">¿Cuándo va a estar disponible?<i class="ph-caret-down" aria-hidden="true"></i></button>
+            <div class="faq-a" id="faq-a9" role="region" aria-labelledby="faq-q9"><div class="faq-a-inner">Vinku está en las últimas etapas de desarrollo. Los registrados en la lista de espera serán los primeros en saber la fecha exacta de lanzamiento y tendrán acceso a precios exclusivos de lanzamiento.</div></div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false" id="faq-q10" aria-controls="faq-a10">¿Qué significa registrarme en la lista de espera?<i class="ph-caret-down" aria-hidden="true"></i></button>
+            <div class="faq-a" id="faq-a10" role="region" aria-labelledby="faq-q10"><div class="faq-a-inner">Significa que te avisamos antes que a nadie cuando Vinku esté listo. También accedes a un precio de lanzamiento exclusivo que no estará disponible después. Registrarte es gratis y no te compromete a comprar.</div></div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false" id="faq-q11" aria-controls="faq-a11">¿Tiene garantía?<i class="ph-caret-down" aria-hidden="true"></i></button>
+            <div class="faq-a" id="faq-a11" role="region" aria-labelledby="faq-q11"><div class="faq-a-inner">Sí. Vinku incluye 12 meses de garantía contra defectos de fabricación. Si tu equipo presenta fallas, lo reemplazamos sin costo.</div></div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false" id="faq-q12" aria-controls="faq-a12">¿Puedo usar Vinku con más de una mascota?<i class="ph-caret-down" aria-hidden="true"></i></button>
+            <div class="faq-a" id="faq-a12" role="region" aria-labelledby="faq-q12"><div class="faq-a-inner">Sí, siempre que ambas mascotas compartan el mismo tipo de alimento seco. Puedes distribuir las 6 franjas horarias para cubrir las comidas de ambas. Si necesitan alimentos diferentes, lo ideal es usar un Vinku para cada una.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== FINAL CTA / FORM ====================== -->
+    <section class="section final" id="registro">
+      <div class="final-mesh" aria-hidden="true"></div>
+      <div class="container final-grid">
+        <div class="final-copy reveal">
+          <h2>Sé de los primeros en tener un Vinku</h2>
+          <p class="lead">Regístrate en la lista de espera. Es gratis, no te compromete, y te garantiza acceso anticipado con precio de lanzamiento.</p>
+
+          <div class="incentives">
+            <div class="incentive">
+              <i class="ph-tag" aria-hidden="true"></i>
+              <div>
+                <h4>Precio de lanzamiento exclusivo</h4>
+                <p>Los registrados acceden a un precio especial que no estará disponible en la venta general.</p>
+              </div>
+            </div>
+            <div class="incentive">
+              <i class="ph-rocket" aria-hidden="true"></i>
+              <div>
+                <h4>Acceso anticipado</h4>
+                <p>Te avisamos antes que a nadie. Compras primero, recibes primero.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-card reveal">
+          <form id="waitlist" action="https://formspree.io/f/REEMPLAZAR" method="POST" novalidate>
+            <h3>Reserva tu lugar</h3>
+
+            <div class="field">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" autocomplete="name" required placeholder="Tu nombre" />
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required placeholder="tucorreo@ejemplo.cl" />
+            </div>
+
+            <div class="field">
+              <label for="modelo">¿Qué modelo te interesa?</label>
+              <select id="modelo" name="modelo" required>
+                <option value="Vinku Core — $29.990">Vinku Core — $29.990</option>
+                <option value="Vinku Sense — $49.990" selected>Vinku Sense — $49.990</option>
+                <option value="Vinku Vision — $79.990">Vinku Vision — $79.990</option>
+                <option value="Aún no estoy seguro">Aún no estoy seguro</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-lg" data-hover>Reservar mi lugar</button>
+            <p class="form-note">No compartimos tu email con nadie.</p>
+          </form>
+
+          <div class="form-success" id="formSuccess" role="status" aria-live="polite">
+            <div class="check"><i class="ph-check" aria-hidden="true"></i></div>
+            <h3>¡Listo! Ya eres parte de Vinku.</h3>
+            <p>Te avisaremos antes que a nadie cuando estemos listos para despachar. Mientras tanto, síguenos en Instagram para ver el proceso.</p>
+            <a href="https://instagram.com/vinku.pet" target="_blank" rel="noopener" class="btn btn-primary" data-hover>Seguir a @vinku.pet en Instagram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================== FOOTER ====================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <a href="#top" class="logo" data-hover>vinku<span class="logo-dot">.</span></a>
+
+        <div class="footer-contact">
+          <a href="https://instagram.com/vinku.pet" target="_blank" rel="noopener" data-hover><i class="ph-instagram-logo" aria-hidden="true"></i> @vinku.pet</a>
+          <a href="https://tiktok.com/@vinku.pet" target="_blank" rel="noopener" data-hover><i class="ph-tiktok-logo" aria-hidden="true"></i> @vinku.pet</a>
+          <a href="mailto:hola@vinku.cl" data-hover><i class="ph-envelope-simple" aria-hidden="true"></i> hola@vinku.cl</a>
+          <span><i class="ph-whatsapp-logo" aria-hidden="true"></i> WhatsApp por definir</span>
+        </div>
+      </div>
+
+      <div class="footer-legal">
+        <p>Vinku es un producto en desarrollo. Las características, precios y fechas de disponibilidad pueden cambiar antes del lanzamiento. Registrarse en la lista de espera no constituye una compra ni una reserva con pago.</p>
+        <p class="copy">© 2026 Vinku — Diseñado en Chile</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================== SCRIPTS ====================== -->
+  <script defer src="lib/gsap.min.js"></script>
+  <script defer src="lib/ScrollTrigger.min.js"></script>
+  <script defer src="lib/manifest.js?v=20260613"></script>
+  <script defer src="main.js?v=20260613"></script>
+</body>
+</html>
